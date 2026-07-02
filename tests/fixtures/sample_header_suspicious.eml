@@ -1,0 +1,13 @@
+From: Microsoft Security <alerts@microsoft.com>
+To: User <user@example.com>
+Reply-To: Secure Login <support@secure-login.ru>
+Return-Path: <mailer@delivery-node.ru>
+Authentication-Results: mx.example.net; spf=fail smtp.mailfrom=delivery-node.ru; dkim=fail; dmarc=fail
+Message-ID: <sample-2@example.com>
+Date: Thu, 02 Jul 2026 11:30:00 +0000
+Subject: Urgent action needed
+Received: from unknown (unknown [198.51.100.23]) by mx.example.net with ESMTP id zzz999;
+ Thu, 02 Jul 2026 11:30:01 +0000
+Content-Type: text/plain; charset="utf-8"
+
+Your mailbox will be disabled. Login now: https://microsoft-login-security.ru/verify
