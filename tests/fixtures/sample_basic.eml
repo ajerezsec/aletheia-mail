@@ -1,0 +1,40 @@
+From: Security Team <security@example.com>
+To: Analyst <analyst@example.com>
+Cc: SOC <soc@example.com>
+Reply-To: noreply@example.com
+Return-Path: <bounce@example.com>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=example.com; dkim=pass; dmarc=pass
+Message-ID: <sample-1@example.com>
+Date: Thu, 02 Jul 2026 10:00:00 +0000
+Subject: Invoice review required
+Received: from mail.example.com (mail.example.com [203.0.113.10]) by mx.example.net with ESMTPS id abc123;
+ Thu, 02 Jul 2026 10:00:01 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary42"
+
+--boundary42
+Content-Type: multipart/alternative; boundary="alt42"
+
+--alt42
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+Please review this document: https://portal.example.com/review?id=42
+
+--alt42
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html><body><p>Hello, open <a href="https://secure.example.org/login">portal</a>.</p></body></html>
+
+--alt42--
+
+--boundary42
+Content-Type: text/plain; name="invoice.txt"
+Content-Disposition: attachment; filename="invoice.txt"
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhbiBhdHRhY2htZW50IGZpbGUu
+
+--boundary42--
