@@ -1,0 +1,79 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aletheia-mail"
+version = "0.1.0"
+description = "The Aletheia Project: uncover hidden technical truth in suspicious emails"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+  { name = "The Aletheia Project Contributors" }
+]
+keywords = ["cybersecurity", "email", "phishing", "forensics", "cli"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+  "Topic :: Utilities"
+]
+dependencies = [
+  "typer>=0.16.0,<1.0.0",
+  "rich>=13.9.0,<14.0.0",
+  "pydantic>=2.10.0,<3.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/aletheia-mail"
+Repository = "https://github.com/your-org/aletheia-mail"
+Issues = "https://github.com/your-org/aletheia-mail/issues"
+
+[project.scripts]
+aletheia = "aletheia.cli:app"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0,<9.0.0",
+  "pytest-cov>=5.0.0,<6.0.0",
+  "ruff>=0.12.0,<1.0.0"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+  "E",
+  "F",
+  "I",
+  "B",
+  "UP",
+  "N",
+  "SIM"
+]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["src/aletheia"]
+branch = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aletheia"]
