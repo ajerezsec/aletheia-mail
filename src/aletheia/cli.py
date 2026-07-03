@@ -21,10 +21,10 @@ def main() -> None:
 def analyze(
     eml_path: Path = EmlPathArgument,
 ) -> None:
-    """Analyze a .eml file (analysis engine will be added in next iteration)."""
+    """Analyze a .eml file."""
 
     console.print(f"[bold]Input:[/bold] {eml_path}")
-    console.print("[yellow]Scaffold ready:[/yellow] analyzer engine is not implemented yet.")
+    console.print("[yellow]CLI ready:[/yellow] analysis output is not wired into this command yet.")
 
 
 if __name__ == "__main__":

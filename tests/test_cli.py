@@ -22,4 +22,4 @@ def test_analyze_command_accepts_existing_file(tmp_path: Path) -> None:
     result = runner.invoke(app, ["analyze", str(sample)])
 
     assert result.exit_code == 0
-    assert "Scaffold ready" in result.stdout
+    assert "CLI ready" in result.stdout

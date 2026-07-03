@@ -1,4 +1,4 @@
-"""Unit tests for milestone 2 domain models."""
+"""Unit tests for domain models."""
 
 from __future__ import annotations
 

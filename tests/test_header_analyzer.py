@@ -1,4 +1,4 @@
-"""Unit tests for milestone 4 header analyzer."""
+"""Unit tests for the header analyzer."""
 
 from __future__ import annotations
 

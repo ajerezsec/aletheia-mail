@@ -11,10 +11,6 @@ In Greek philosophy, **Aletheia** means *unconcealed truth*. This project applie
 - Deliver clear risk findings for analysts and defenders.
 - Grow incrementally as a real long-term open source project.
 
-## Current Status
-
-Iteration 1 is complete: project foundation and quality baseline.
-
 ## Planned Features (MVP)
 
 - Parse `.eml` files and extract core metadata.

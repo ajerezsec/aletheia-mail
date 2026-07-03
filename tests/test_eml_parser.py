@@ -1,4 +1,4 @@
-"""Unit tests for milestone 3 EML parser."""
+"""Unit tests for the EML parser."""
 
 from __future__ import annotations
 

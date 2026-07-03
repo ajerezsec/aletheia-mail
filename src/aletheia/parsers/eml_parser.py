@@ -1,4 +1,4 @@
-"""EML parser implementation for milestone 3."""
+"""EML parser implementation."""
 
 from __future__ import annotations
 

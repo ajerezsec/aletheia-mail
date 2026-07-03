@@ -1,0 +1,23 @@
+From: Alerts <alerts@example.com>
+To: Analyst <analyst@example.com>
+Date: Fri, 03 Jul 2026 09:15:00 +0000
+Subject: Verify your account
+Content-Type: multipart/alternative; boundary="url-boundary"
+
+--url-boundary
+Content-Type: text/plain; charset="utf-8"
+
+Please review:
+https://bit.ly/4alert
+https://198.51.100.23/reset
+https://xn--microsoft-4nf.example/login
+https://secure-login.verify.example.com:8443/session
+
+--url-boundary
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<a href="https://198.51.100.23/reset">Verify now</a>
+</body></html>
+
+--url-boundary--
